@@ -1,5 +1,8 @@
 <h1 align="center">Brightness Control</h1>
-<h3 align="center">designed for <code>Linux-based systems</code>.</h3>
+<h3 align="center">Designed for <code>Linux-based systems</code>.</h3>
+<p align="center">
+  <img src="img/app_screenshot.png" alt="App Screenshot">
+</p>
 
 <p align="center">
   <strong>Simplify Screen Brightness Adjustment with the Brightness Control</strong>
@@ -106,46 +109,17 @@ Before using the Brightness Control, make sure you have the following prerequisi
    - Witness the real-time brightness preview for accurate fine-tuning.
 
 3. **Apply Brightness:**
-   - When satisfied with the desired brightness, a single click on the "Apply Brightness" button effects the change.
+   - When satisfied with the desired brightness, clicking the "Apply Brightness" button affects the change.
 
 ---
 
 ## Themes
 
-- **Dark Theme:**
-
-![Dark Theme](img/dark_theme.png)
-
-  To switch to the dark theme:
-  1. Click the "Theme" option in the menu bar.
-  2. Select "Dark Theme" from the dropdown.
-
-- **Green Theme:**
-  
-![Green Theme](img/green_theme.png)
-
-  To switch to the green theme:
-  1. Click the "Theme" option in the menu bar.
-  2. Select "Green Theme" from the dropdown.
-
-
-- **Blue Theme:**
-  
-![Blue Theme](img/blue_theme.png)
-
-  To switch to the dark theme:
-  1. Click the "Theme" option in the menu bar.
-  2. Select "Blue Theme" from the dropdown.
-
-
-- **Red Theme:**
-  
-![Red Theme](img/red_theme.png)
-
-  To switch to the dark theme:
-  1. Click the "Theme" option in the menu bar.
-  2. Select "Red Theme" from the dropdown.
-
+  1. Locate the "Theme" option on the menu bar.
+  2. Click on it to reveal a dropdown menu.
+  3. Within the dropdown, you can choose from available themes.
+  ##### Currently, there are options for dark mode, as well as light themes in green, blue, and red.
+     
 ---
 
 ## Troubleshooting
@@ -156,7 +130,7 @@ Encountering issues? Follow these steps to troubleshoot:
 
 - **Permissions:** Verify you possess the necessary permissions to adjust brightness. In some scenarios, superuser privileges may be required.
 
-- **Theme Concerns:** If theme-related problems emerge, confirm that the theme stylesheet files (`dark_theme.qss`, `green_theme.qss`, `blue_theme.qss` and `red_theme.qss`) reside alongside `main.py`.
+- **Theme Concerns:** If theme-related problems emerge, confirm that the theme stylesheet files (`dark_theme.qss`, `blue_theme.qss`, etc.) reside alongside `main.py`.
 
 ---
 
@@ -172,12 +146,16 @@ Welcome contributions! To enhance the app:
 
 ## License
 
-This project is licensed under the MIT License. For details, refer to the [LICENSE](LICENSE) file.
+This project is licensed under the MIT License. For details, please look at the [LICENSE](LICENSE) file.
 
 ---
 
 <p align="center">
   Created with ❤️ by Amirreza Vafaei Moghadam
+</p>
+<p align="center">
+  For questions or feedback, you can reach out at
+  <a href="mailto:vafaeim@icloud.com">vafaeim@icloud.com</a>.
 </p>
 
 # brightness-control
