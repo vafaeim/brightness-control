@@ -1,4 +1,5 @@
 <h1 align="center">Brightness Control</h1>
+<h3 align="center">designed for <code>Linux-based systems</code>.</h3>
 
 <p align="center">
   <strong>Simplify Screen Brightness Adjustment with the Brightness Control</strong>
@@ -13,7 +14,7 @@
   <a href="#contributing">Contributing</a> •
   <a href="#license">License</a>
 </p>
----
+
 
 ## Features
 
@@ -36,6 +37,7 @@
 ### Prerequisites
 
 Before using the Brightness Control, make sure you have the following prerequisites installed:
+- **Linux-based system:** Brightness Control designed for Linux-based systems.
 
 - **Python 3.x:** If not installed, download the latest version from [python.org](https://www.python.org/downloads/).
 
@@ -44,12 +46,38 @@ Before using the Brightness Control, make sure you have the following prerequisi
   pip install pyqt5
   ```
 
-- **brightnessctl Utility:** This app relies on the `brightnessctl` utility. Install it on Ubuntu/Debian-based systems:
-  ```sh
-  sudo apt-get install brightnessctl
-  ```
+- **brightnessctl Utility:** This app relies on the `brightnessctl` utility. Install it based on your Linux distribution:
+
+  - **For Ubuntu/Debian-based Systems:**
+    ```sh
+    sudo apt-get install brightnessctl
+    ```
+
+  - **For Manjaro/Arch-based Systems:**
+    ```sh
+    sudo pacman -S brightnessctl
+    ```
+
+  - **For Fedora-based Systems:**
+    ```sh
+    sudo dnf install brightnessctl
+    ```
+
+  - **For openSUSE-based Systems:**
+    ```sh
+    sudo zypper install brightnessctl
+    ```
+
+  - **For CentOS/RHEL-based Systems:**
+    ```sh
+    sudo yum install brightnessctl
+    ```
+
+
 
 ### Installation
+
+**Note: Brightness Control is designed for Linux-based systems.**
 
 1. **Clone the Repository:**
    ```sh
@@ -63,7 +91,7 @@ Before using the Brightness Control, make sure you have the following prerequisi
 
 3. **Run the Application:**
    ```sh
-   python main.py
+   python src/main.py
    ```
 
 ---
