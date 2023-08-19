@@ -1,8 +1,4 @@
-```markdown
 <h1 align="center">Brightness Control</h1>
-<p align="center">
-  <img src="img/app_screenshot.png" alt="App Screenshot">
-</p>
 
 <p align="center">
   <strong>Simplify Screen Brightness Adjustment with the Brightness Control</strong>
@@ -17,7 +13,6 @@
   <a href="#contributing">Contributing</a> •
   <a href="#license">License</a>
 </p>
-
 ---
 
 ## Features
@@ -90,25 +85,35 @@ Before using the Brightness Control, make sure you have the following prerequisi
 ## Themes
 
 - **Dark Theme:**
+
 ![Dark Theme](img/dark_theme.png)
+
   To switch to the dark theme:
   1. Click the "Theme" option in the menu bar.
   2. Select "Dark Theme" from the dropdown.
 
 - **Green Theme:**
+  
 ![Green Theme](img/green_theme.png)
+
   To switch to the green theme:
   1. Click the "Theme" option in the menu bar.
   2. Select "Green Theme" from the dropdown.
 
+
 - **Blue Theme:**
+  
 ![Blue Theme](img/blue_theme.png)
+
   To switch to the dark theme:
   1. Click the "Theme" option in the menu bar.
   2. Select "Blue Theme" from the dropdown.
 
+
 - **Red Theme:**
+  
 ![Red Theme](img/red_theme.png)
+
   To switch to the dark theme:
   1. Click the "Theme" option in the menu bar.
   2. Select "Red Theme" from the dropdown.
@@ -146,5 +151,5 @@ This project is licensed under the MIT License. For details, refer to the [LICEN
 <p align="center">
   Created with ❤️ by Amirreza Vafaei Moghadam
 </p>
-```
+
 # brightness-control
