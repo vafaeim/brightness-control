@@ -8,16 +8,15 @@ def main():
     app.setStyle("Fusion")
 
     window = BrightnessControl()
-    window.app = app
-    
+
     # Load the dark theme by default
-    window.load_dark_theme()
-    
+    window.load_theme("dark")
+
     # Display the main application window
     window.show()
-    
+
     # Run the event loop
-    sys.exit(app.exec())
+    sys.exit(app.exec_())
 
 if __name__ == "__main__":
     main()

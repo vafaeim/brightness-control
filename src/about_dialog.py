@@ -1,6 +1,5 @@
-from PyQt5.QtWidgets import QDialog, QVBoxLayout, QLabel, QPushButton, QApplication
+from PyQt5.QtWidgets import QDialog, QVBoxLayout, QLabel, QPushButton
 from PyQt5.QtCore import Qt
-import sys
 
 # Define a custom dialog for displaying information about the app
 class AboutDialog(QDialog):
@@ -38,7 +37,6 @@ class AboutDialog(QDialog):
 
 
 def main():
-    app = QApplication(sys.argv)
     about_dialog = AboutDialog()
     about_dialog.exec()
 
