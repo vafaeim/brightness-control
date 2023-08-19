@@ -1,0 +1,104 @@
+/* Blue Theme Styles */
+
+/* QMainWindow */
+QMainWindow {
+    background-color: #f0f5ff;
+    color: #333333;
+}
+
+/* QLabel */
+QLabel {
+    color: #333333;
+}
+
+/* QSlider */
+QSlider {
+    background-color: #d0e4ff;
+    color: #333333;
+    border: none;
+}
+
+QSlider::handle:horizontal {
+    background-color: #3498db;
+    border: none;
+    width: 20px;
+    height: 20px;
+    margin: -6px 0;
+    border-radius: 50%;
+}
+
+/* QPushButton */
+QPushButton {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 14px 28px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+QPushButton:hover {
+    background-color: #2980b9;
+    color: #f0f0f0;
+}
+
+/* QMenuBar */
+QMenuBar {
+    background-color: #f0f5ff;
+    color: #333333;
+    border: none;
+    padding: 10px;
+}
+
+/* QMenu */
+QMenu {
+    background-color: #d6eaf8;
+    color: #333333;
+    border: 1px solid #bdc3c7;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+/* QMenu on hover */
+QMenu:hover {
+    background-color: #c5e1a5;
+}
+
+/* QDialog */
+QDialog {
+    background-color: #f0f5ff;
+    color: #333333;
+    border: 1px solid #bdc3c7;
+    border-radius: 12px;
+}
+
+/* QGroupBox */
+QGroupBox {
+    border: 1px solid #bdc3c7;
+    border-radius: 10px;
+    margin-top: 12px;
+    padding: 10px;
+    background-color: #d6eaf8;
+    color: #333333;
+}
+
+/* QInputDialog */
+QInputDialog {
+    background-color: #f0f5ff;
+    color: #333333;
+}
+
+/* QFileDialog */
+QFileDialog {
+    background-color: #f0f5ff;
+    color: #333333;
+}
+
+/* QMessageBox */
+QMessageBox {
+    background-color: #f0f5ff;
+    color: #333333;
+    border: 1px solid #bdc3c7;
+    border-radius: 12px;
+}
