@@ -7,8 +7,9 @@ from about_dialog import AboutDialog
 
 # Define the main application window
 class BrightnessControl(QMainWindow):
+	# Warning: Do not set MIN_BRIGHTNESS to zero; use a value above 0 to avoid issues.
     MIN_BRIGHTNESS = 20
-    MAX_BRIGHTNESS = 976
+    MAX_BRIGHTNESS = 1000
     
     def __init__(self):
         super().__init__()
@@ -60,6 +61,7 @@ class BrightnessControl(QMainWindow):
         self.brightness_slider.setValue(50)
         self.brightness_slider.valueChanged.connect(self.update_brightness_label)
         
+        
         # Button to apply the selected brightness level
         self.apply_button = QPushButton("Apply Brightness", self)
         self.apply_button.setObjectName("applyButton")
@@ -88,15 +90,28 @@ class BrightnessControl(QMainWindow):
         # Theme menu for selecting different UI themes
         self.view_menu = self.menu_bar.addMenu("Theme")
         self.dark_theme_action = self.view_menu.addAction("Dark Theme")
-        self.green_theme_action = self.view_menu.addAction("Green Theme")
+        self.silver_theme_action = self.view_menu.addAction("Silver Theme")
         self.blue_theme_action = self.view_menu.addAction("Blue Theme")
+        self.purple_theme_action = self.view_menu.addAction("Purple Theme")
+        self.green_theme_action = self.view_menu.addAction("Green Theme")
         self.red_theme_action = self.view_menu.addAction("Red Theme")
+        self.yellow_theme_action = self.view_menu.addAction("Yellow Theme")
+        self.brown_theme_action = self.view_menu.addAction("Brown Theme")
+        self.orange_theme_action = self.view_menu.addAction("Orange Theme")
+        self.pink_theme_action = self.view_menu.addAction("Pink Theme")
         
         # Connect actions to theme selection methods
         self.dark_theme_action.triggered.connect(self.load_dark_theme)
-        self.green_theme_action.triggered.connect(self.load_green_theme)
+        self.silver_theme_action.triggered.connect(self.load_silver_theme)
         self.blue_theme_action.triggered.connect(self.load_blue_theme)
+        self.purple_theme_action.triggered.connect(self.load_purple_theme)
+        self.green_theme_action.triggered.connect(self.load_green_theme)
         self.red_theme_action.triggered.connect(self.load_red_theme)
+        self.yellow_theme_action.triggered.connect(self.load_yellow_theme)
+        self.brown_theme_action.triggered.connect(self.load_brown_theme)
+        self.red_theme_action.triggered.connect(self.load_red_theme)
+        self.orange_theme_action.triggered.connect(self.load_orange_theme)
+        self.pink_theme_action.triggered.connect(self.load_pink_theme)
         
         # About menu for displaying application information
         self.about_menu = self.menu_bar.addMenu("About")
@@ -109,15 +124,21 @@ class BrightnessControl(QMainWindow):
             stylesheet = stylesheet_file.read()
             self.app.setStyleSheet(stylesheet)
     
-    # Load the green theme stylesheet
-    def load_green_theme(self):
-        with open("themes/green_theme.qss", "r") as stylesheet_file:
+    # Load the red theme stylesheet
+    def load_silver_theme(self):
+        with open("themes/silver_theme.qss", "r") as stylesheet_file:
             stylesheet = stylesheet_file.read()
             self.app.setStyleSheet(stylesheet)
-
+    
     # Load the blue theme stylesheet
     def load_blue_theme(self):
         with open("themes/blue_theme.qss", "r") as stylesheet_file:
+            stylesheet = stylesheet_file.read()
+            self.app.setStyleSheet(stylesheet)
+
+    # Load the purple theme stylesheet
+    def load_purple_theme(self):
+        with open("themes/purple_theme.qss", "r") as stylesheet_file:
             stylesheet = stylesheet_file.read()
             self.app.setStyleSheet(stylesheet)
 
@@ -126,7 +147,37 @@ class BrightnessControl(QMainWindow):
         with open("themes/red_theme.qss", "r") as stylesheet_file:
             stylesheet = stylesheet_file.read()
             self.app.setStyleSheet(stylesheet)
-    
+
+    # Load the red theme stylesheet
+    def load_green_theme(self):
+        with open("themes/green_theme.qss", "r") as stylesheet_file:
+            stylesheet = stylesheet_file.read()
+            self.app.setStyleSheet(stylesheet)
+
+    # Load the yellow theme stylesheet
+    def load_yellow_theme(self):
+        with open("themes/yellow_theme.qss", "r") as stylesheet_file:
+            stylesheet = stylesheet_file.read()
+            self.app.setStyleSheet(stylesheet)
+
+    # Load the brown theme stylesheet
+    def load_brown_theme(self):
+        with open("themes/brown_theme.qss", "r") as stylesheet_file:
+            stylesheet = stylesheet_file.read()
+            self.app.setStyleSheet(stylesheet)
+
+    # Load the orange theme stylesheet
+    def load_orange_theme(self):
+        with open("themes/orange_theme.qss", "r") as stylesheet_file:
+            stylesheet = stylesheet_file.read()
+            self.app.setStyleSheet(stylesheet)
+
+    # Load the pink theme stylesheet
+    def load_pink_theme(self):
+        with open("themes/pink_theme.qss", "r") as stylesheet_file:
+            stylesheet = stylesheet_file.read()
+            self.app.setStyleSheet(stylesheet)
+
     # Show the about dialog
     def show_about_dialog(self):
         about_dialog = AboutDialog(self)

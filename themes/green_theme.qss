@@ -27,6 +27,16 @@ QSlider::handle:horizontal {
     border-radius: 50%;
 }
 
+QSlider::add-page:horizontal {
+ 	/* Active portion color */
+	background-color: #EEEEEE;
+}
+
+QSlider::sub-page:horizontal {
+	/* Inactive portion color */
+	background-color: #333333;
+}
+
 /* QPushButton */
 QPushButton {
     background-color: #27ae60;

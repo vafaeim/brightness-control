@@ -27,7 +27,7 @@
 
 - **Seamless Brightness Application:** One click on the "Apply Brightness" button seamlessly enacts the selected brightness setting, leveraging the powerful `brightnessctl` utility.
 
-- **Personalized Themes:** Embrace your visual preferences by selecting between 4 elegant themes – "Dark", "Blue", "Red" and "Green".
+- **Personalized Themes:** Embrace your visual preferences by selecting between 10 elegant themes.
 
 - **Immediate Utility Status:** Stay informed about the `brightnessctl` utility's availability through real-time feedback, ensuring you're always ready to manage brightness.
 
@@ -56,7 +56,7 @@ Before using the Brightness Control, make sure you have the following prerequisi
     sudo apt-get install brightnessctl
     ```
 
-  - **For Manjaro/Arch-based Systems:**
+  - **For Arch-based Systems:**
     ```sh
     sudo pacman -S brightnessctl
     ```
@@ -118,8 +118,8 @@ Before using the Brightness Control, make sure you have the following prerequisi
   1. Locate the "Theme" option on the menu bar.
   2. Click on it to reveal a dropdown menu.
   3. Within the dropdown, you can choose from available themes.
-  ##### Currently, there are options for dark mode, as well as light themes in green, blue, and red.
-     
+  ##### Currently, there are options for dark mode, silver, blue, purple green, red, yellow, orange, brown, pink, 
+
 ---
 
 ## Troubleshooting
